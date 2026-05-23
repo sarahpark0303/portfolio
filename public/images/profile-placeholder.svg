@@ -1,0 +1,6 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="500" fill="#FFB6C1"/>
+  <circle cx="200" cy="200" r="100" fill="#FF4D8D" opacity="0.6"/>
+  <text x="200" y="380" text-anchor="middle" font-family="serif" font-size="18" fill="#fff">사진을 추가해주세요</text>
+  <text x="200" y="410" text-anchor="middle" font-family="serif" font-size="14" fill="rgba(255,255,255,0.7)">public/images/profile.jpg</text>
+</svg>

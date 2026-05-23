@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  /* 베이스 */
+  --bg:        #0C0C14;
+  --bg-2:      #111120;
+  --bg-3:      #16162A;
+
+  /* 핑크 */
+  --pink:      #FF4D8D;
+  --pink-dim:  #E8537A;
+  --pink-glow: rgba(255, 77, 141, 0.28);
+  --pink-soft: rgba(255, 77, 141, 0.12);
+
+  /* 보조 컬러 */
+  --violet:    rgba(130, 80, 255, 0.22);
+  --teal:      rgba(56, 189, 248, 0.15);
+
+  /* 텍스트 */
+  --text:       #F0F0F8;
+  --text-sub:   rgba(240, 240, 248, 0.55);
+  --text-muted: rgba(240, 240, 248, 0.30);
+
+  /* 글래스 — 3단계 */
+  --glass-low:          rgba(255, 255, 255, 0.04);
+  --glass-mid:          rgba(255, 255, 255, 0.08);
+  --glass-high:         rgba(255, 255, 255, 0.13);
+  --glass-border:       rgba(255, 255, 255, 0.10);
+  --glass-border-bright:rgba(255, 255, 255, 0.20);
+
+  /* 그림자 */
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.40);
+  --shadow-pink:  0 0 60px rgba(255, 77, 141, 0.25);
+}
+
+@theme inline {
+  --color-bg:         var(--bg);
+  --color-bg-2:       var(--bg-2);
+  --color-pink:       var(--pink);
+  --color-text:       var(--text);
+  --color-text-sub:   var(--text-sub);
+  --color-text-muted: var(--text-muted);
+  --font-sans: var(--font-geist-sans);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection { background: var(--pink-soft); color: var(--pink); }
+
+/* ──── 글래스 유틸리티 ──── */
+.glass {
+  background: var(--glass-mid);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glass), inset 0 1px 0 var(--glass-border-bright);
+}
+
+.glass-low {
+  background: var(--glass-low);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glass);
+}
+
+.glass-high {
+  background: var(--glass-high);
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  border: 1px solid var(--glass-border-bright);
+  box-shadow: var(--shadow-glass), inset 0 1px 0 rgba(255,255,255,0.28);
+}
+
+.glass-pink {
+  background: rgba(255, 77, 141, 0.15);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 77, 141, 0.30);
+  box-shadow: 0 8px 32px rgba(255, 77, 141, 0.20), inset 0 1px 0 rgba(255,255,255,0.15);
+}
