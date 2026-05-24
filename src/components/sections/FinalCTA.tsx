@@ -114,7 +114,7 @@ export default function FinalCTA() {
         <span
           className="serif-latin italic text-sm"
           style={{ fontFamily: "var(--font-serif-latin)", color: "rgba(250,248,245,0.2)" }}>
-          Tori
+          Zoe
         </span>
         <span
           className="label order-last md:order-none"

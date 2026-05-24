@@ -8,12 +8,12 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "토리 | SNS 성장 컨설팅",
+  title: "조이(Zoe) | SNS 성장 컨설팅",
   description:
-    "인스타 3개월 만에 6K, 틱톡 1주일 만에 1K. SNS 성장 전문가 토리의 포트폴리오.",
+    "인스타 3개월 만에 6K, 틱톡 1주일 만에 1K. SNS 성장 전문가 조이(Zoe)의 포트폴리오.",
   openGraph: {
-    title: "토리 | SNS 성장 컨설팅",
-    description: "인스타 3개월 만에 6K, 틱톡 1주일 만에 1K. SNS 성장 전문가 토리의 포트폴리오.",
+    title: "조이(Zoe) | SNS 성장 컨설팅",
+    description: "인스타 3개월 만에 6K, 틱톡 1주일 만에 1K. SNS 성장 전문가 조이(Zoe)의 포트폴리오.",
     type: "website",
   },
 };

@@ -56,28 +56,28 @@ export default function Hero() {
           </GlassCard>
         </motion.div>
 
-        {/* 헤드라인 */}
+        {/* 헤드라인 — 독자에게 던지는 직관적 도발 */}
         <motion.h1 initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.1 }}
-          className="text-[2.75rem] sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[1.02] tracking-tight mb-6"
+          className="text-[1.875rem] sm:text-[2.5rem] md:text-5xl lg:text-6xl font-black leading-[1.15] tracking-tight mb-6"
           style={{ color: "var(--text)" }}>
-          <span className="block">숫자로 증명하는</span>
-          <span className="block mt-1" style={{
+          <span className="block">당신의 강점,</span>
+          <span className="block mt-2" style={{
             background: "linear-gradient(120deg, #FF4D8D 0%, #FF80AA 40%, #B980FF 80%, #7C9BFF 100%)",
             WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
             filter: "drop-shadow(0 0 40px rgba(255,77,141,0.35))",
           }}>
-            SNS 성장.
+            정작 당신이 가장 모를 수도 있습니다.
           </span>
         </motion.h1>
 
-        {/* 서브카피 — br 제거, 자연스러운 줄바꿈 */}
+        {/* 서브카피 — 일반 명제 + 본인의 약속 */}
         <motion.p initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.18 }}
-          className="text-base sm:text-lg md:text-xl leading-relaxed mb-9 sm:mb-10 max-w-xl"
+          className="text-base sm:text-lg md:text-xl leading-relaxed mb-9 sm:mb-10 max-w-2xl"
           style={{ color: "var(--text-sub)" }}>
-          인스타 3개월 만에 6K, 틱톡 1주일 만에 1K.{" "}
-          팔로워가 많은 사람들도 찾아오는 나만의 인사이트로 당신의 계정을 성장시켜 드립니다.
+          <span className="font-bold" style={{ color: "var(--text)" }}>잘 되는 계정들은 모두 자신만의 캐릭터를 알고 있습니다.</span>
+          {" "}직접 여러 계정을 키우며 검증한 직관으로, 당신도 모르던 강점과 캐릭터를 발견합니다.
         </motion.p>
 
         {/* CTA */}
@@ -97,7 +97,7 @@ export default function Hero() {
             <a href="#consulting"
               className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-bold text-sm tracking-wide transition-all hover:-translate-y-0.5"
               style={{ color: "var(--text)" }}>
-              실적 보기
+              사례 보기
             </a>
           </GlassCard>
         </motion.div>

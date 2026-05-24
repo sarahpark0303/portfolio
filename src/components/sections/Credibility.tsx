@@ -70,7 +70,7 @@ export default function Credibility() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-sm"
           style={{ color: "var(--text-muted)", fontFamily: "var(--font-sans)" }}>
-          토리 본인 계정 기준. 이론이 아닌 직접 검증한 숫자.
+          조이(Zoe) 본인 계정 기준. 이론이 아닌 직접 검증한 숫자.
         </motion.p>
       </div>
 

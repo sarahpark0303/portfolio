@@ -39,10 +39,10 @@ export default function Appeal() {
           transition={{ duration: 0.5 }} className="mb-10 md:mb-16">
           <p className="inline-flex items-center gap-2 text-[11px] md:text-xs font-black tracking-widest uppercase mb-3" style={{ color: "var(--pink)" }}>
             <span className="w-1 h-1 rounded-full" style={{ background: "var(--pink)" }} />
-            Why Tori
+            Why Zoe
           </p>
           <h2 className="text-[1.75rem] sm:text-3xl md:text-4xl font-black leading-tight" style={{ color: "var(--text)" }}>
-            왜 토리인가요?
+            왜 조이(Zoe)인가요?
           </h2>
         </motion.div>
 
